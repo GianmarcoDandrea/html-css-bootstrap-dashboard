@@ -16,6 +16,7 @@
 
 }
 
+
 /******************** UTILITIES *****************/
 .flex-center {
     justify-content: center;
@@ -25,6 +26,7 @@
 .ovrflw-y {
     overflow-y: scroll;
 }
+
 
 /********************* COMMON ***************/
 
@@ -36,17 +38,21 @@ img {
     max-width: 100%;
 }
 
+
 /******************* HEAD BAR ********************/
 .head-bar {
     height: var(--head-bar-height);
     background-color: var(--primary-bg-color);
 }
 
+
 nav {
     background-color: #ffffff;
     height: calc(var(--head-bar-height) - 10px);
 }
 
+
+/**************** logo *************/
 .logo {    
     width: 15%;
     height: calc(var(--head-bar-height) - 20px);
@@ -62,6 +68,8 @@ nav {
     display: none;
 }
 
+
+/************** search bar **************/
 .search-bar {
     width: 70%;
     background-color: #e5e5e5;
@@ -76,13 +84,14 @@ nav {
 }
 
 
-
 /********************* MAIN ******************/
 main {
     height: calc(100% - var(--head-bar-height));
 
 }
-/***************** side bar ***************/
+
+
+/***************** SIDEBAR ***************/
 .sidebar {
     width: var(--sidebar-wd);
     background-color: var(--sidebar-bg-color);
@@ -101,11 +110,13 @@ main {
     height: 10%;
 }
 
-/************** dashboard section ***************/
+
+/************** DASHBOARD ***************/
 .dashboard {
     width:calc(100% - var(--sidebar-wd));
     background-color:var(--primary-bg-color);
 }
+
 
 /************** dashboard header ***************/
 .dashboard-header{
@@ -116,4 +127,28 @@ main {
     width: 100%;
     /* debug */
     background-color: white;
+}
+
+.next-classes {
+    /* debug */
+    height: 450px;
+    background-color: lightblue;
+}
+
+.faq {
+    /* debug */
+    height: 300px;
+    background-color: lightblue;
+}
+
+.todo {
+    /* debug */
+    height: 300px;
+    background-color: lightblue;
+}
+
+.graphic {
+    /* debug */
+    height: 450px;
+    background-color: lightblue;
 }
