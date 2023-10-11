@@ -4,6 +4,16 @@
     --sidebar-wd: 150px;
 }
 
+/******************* HEAD BAR ********************/
+.mobile-logo {
+    display: none;
+}
+
+.desktop-logo {
+    display: block;
+}
+
+
 /***************** side bar ***************/
 .sidebar {
     width: var(--sidebar-wd);   
@@ -13,11 +23,17 @@
     display: block;
 }
 
-/******************* HEAD BAR ********************/
-.mobile-logo {
-    display: none;
+/******************** MAIN ************************/
+
+/************** dashboard header ***************/
+
+.plus {
+    width: 0;
+    height: 0px;
+    background-color: none;
+    font-size: 0;
 }
 
-.desktop-logo {
+.type-of-app {
     display: block;
 }

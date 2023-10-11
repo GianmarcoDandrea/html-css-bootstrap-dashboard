@@ -2,6 +2,7 @@
 :root {
     /************** common *********/
     --primary-bg-color:#F8F9FA;
+    --primary-text-color: #ffffff;
 
     /************** head bar *********/
     --head-bar-height: 70px;
@@ -10,10 +11,10 @@
     /************* side bar *********/
     --sidebar-wd: 60px;
     --sidebar-bg-color: #142A40;
-    --sidebar-text-color: #ffffff;
 
     /******** dashboard header ********/
     --dashboard-header-bg-color:#1b72e8;
+    --type-of-plan-opt-bg-color:#165bba;
 
 }
 
@@ -47,7 +48,7 @@ img {
 }
 
 
-nav {
+.head-bar-nav {
     background-color: #ffffff;
     height: calc(var(--head-bar-height) - 10px);
 }
@@ -101,7 +102,7 @@ main {
 
 .sidebar a,
 .admin-setting {
-    color: var(--sidebar-text-color);
+    color: var(--primary-text-color);
 }
 
 .icon-text {
@@ -119,13 +120,37 @@ main {
 /************** dashboard header ***************/
 .dashboard-header{
     background-color:  var( --dashboard-header-bg-color);
+    color: var(--primary-text-color);
+}
+
+.new-student {
+    color: var(--primary-text-color);
 }
 
 .dashboard-header-box {
     width: 100%;
-    /* debug */
-    background-color: white;
 }
+
+.type-of-plan-opt {
+    background-color: var(--type-of-plan-opt-bg-color);
+    font-size: 0.7rem;
+}
+
+.plus {
+    width: 25px;
+    height: 25px;
+}
+
+.type-of-app {
+    display: none;
+    background-color: var(--type-of-plan-opt-bg-color);
+    font-size: 0.7rem;
+}
+
+
+
+
+
 
 .next-classes {
     /* debug */
