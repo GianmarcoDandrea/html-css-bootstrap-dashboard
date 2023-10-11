@@ -1,7 +1,10 @@
 /******************** ROOT *********************/
 :root {
+    /*************** head bar *************/
+    --icon-color: #5b5858;
+
     /************* side bar *********/
-    --sidebar-wd: 150px;
+    --sidebar-wd: 110px;
 }
 
 /******************* HEAD BAR ********************/
@@ -10,6 +13,14 @@
 }
 
 .desktop-logo {
+    display: block;
+    width: 100px;
+}
+
+.search-bar-btn .fa-list-ul,
+.search-bar-btn .fa-circle-question,
+.search-bar-btn .fa-ellipsis-vertical {
+    color: var(--icon-color);
     display: block;
 }
 

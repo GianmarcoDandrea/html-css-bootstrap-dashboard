@@ -5,7 +5,8 @@
     --primary-text-color: #ffffff;
 
     /************** head bar *********/
-    --head-bar-height: 70px;
+    --head-bar-height: 60px;
+    --bell-color: #ff8f00;
 
 
     /************* side bar *********/
@@ -15,6 +16,12 @@
     /******** dashboard header ********/
     --dashboard-header-bg-color:#1b72e8;
     --type-of-plan-opt-bg-color:#165bba;
+
+    /************* dashboard main ***************/
+    --title-bg-color: #f7f7f7;
+    --dashboard-box-bg-color: #ffffff;
+
+
 
 }
 
@@ -55,15 +62,12 @@ img {
 
 
 /**************** logo *************/
-.logo {    
-    width: 15%;
-    height: calc(var(--head-bar-height) - 20px);
-    /* debug */
-    background-color: green;
-}
+
 
 .mobile-logo {
     display: block;
+    width: calc(var(--head-bar-height) - 10px);
+    height: calc(var(--head-bar-height) - 10px);
 }
 
 .desktop-logo {
@@ -73,17 +77,37 @@ img {
 
 /************** search bar **************/
 .search-bar {
-    width: 70%;
+    width: 75%;
     background-color: #e5e5e5;
     height: calc(var(--head-bar-height) - 20px);
 }
 
-.nav-btn {
-    width: 15%;
-    height: calc(var(--head-bar-height) - 20px);
-    /* debug */
-    background-color: green;
+.search-bar input {
+    width: 90%;
+    background-color: #e5e5e5;
+    border: none;
+    font-size: 0.9rem;
 }
+
+.search-bar input:focus-visible {
+    outline: none;
+}
+
+.search-bar-btn {
+    width: 10%;
+    height: calc(var(--head-bar-height) - 10px);;
+}
+
+.search-bar-btn .fa-bell {
+    color: var(--bell-color);
+}
+
+.search-bar-btn .fa-list-ul,
+.search-bar-btn .fa-circle-question,
+.search-bar-btn .fa-ellipsis-vertical {
+    display: none;
+}
+
 
 
 /********************* MAIN ******************/
@@ -147,31 +171,34 @@ main {
     font-size: 0.7rem;
 }
 
-
-
+/************* dashboard main ***************/
+.title {
+    background-color: var(--title-bg-color);
+    z-index: -1;
+}
 
 
 
 .next-classes {
     /* debug */
     height: 450px;
-    background-color: lightblue;
+    background-color: var(--dashboard-box-bg-color);
 }
 
 .faq {
     /* debug */
     height: 300px;
-    background-color: lightblue;
+    background-color: var(--dashboard-box-bg-color);
 }
 
 .todo {
     /* debug */
     height: 300px;
-    background-color: lightblue;
+    background-color: var(--dashboard-box-bg-color);
 }
 
 .graphic {
     /* debug */
     height: 450px;
-    background-color: lightblue;
+    background-color: var(--dashboard-box-bg-color);
 }
