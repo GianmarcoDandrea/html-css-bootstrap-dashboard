@@ -10,8 +10,8 @@
 
     <!-- CSS LINK -->
     <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 576px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 768px)">
 
     <!-- FONTAWESOME LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -27,16 +27,55 @@
 <body>
     <div class="wrapper w-100 vh-100">
 
-        <div class="head-bar w-100">
+        <div class="head-bar w-100 d-flex flex-center">
+            <nav class="d-flex w-100 p-2 flex-center">
+
+                <div class="logo d-flex">
+                    <div class="mobile-logo d-flex flex-center">
+                        
+                    </div>
+
+                    <div class="desktop-logo">
+                        
+                    </div>
+                </div>
+
+                <div class="search-bar d-flex flex-center">
+
+                </div>
+
+                <div class="nav-btn">
+
+                </div>
+            </nav>
+
 
         </div>
 
         <main class="w-100 d-flex flex-wrap">
-            <div class="sidebar h-100">
 
+            <!-------------- SIDEBAR ------------>
+            <div class="sidebar h-100 p-2 d-flex flex-column justify-content-between">
+
+                <div class="sidebar-icon"></div>
+
+                <div class="admin-setting"></div>
             </div>
 
-            <div class="dashboard-section h-100 ">
+            <!-------------- DASHBAR ------------>
+            <div class="dashboard h-100 ovrflw-y">
+
+                <div class="dashboard-header p-2 d-flex flex-wrap">
+                    <div class="new-student my-2 dashboard-header-box">
+                        new-student
+                    </div>
+                    <div class="type-of-plan my-2 dashboard-header-box">
+                        type of plan
+                    </div>
+                    <div class="online-status my-2 dashboard-header-box">
+                        online online-status
+                    </div>
+                </div>
 
             </div>
         

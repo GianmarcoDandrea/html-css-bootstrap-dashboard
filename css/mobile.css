@@ -4,13 +4,26 @@
     --primary-bg-color:#F8F9FA;
 
     /************** head bar *********/
-    --head-bar-height: 60px;
+    --head-bar-height: 70px;
 
 
     /************* side bar *********/
     --sidebar-wd: 80px;
     --sidebar-bg-color: #142A40;
 
+    /******** dashboard header ********/
+    --dashboard-header-bg-color:#1b72e8;
+
+}
+
+/******************** UTILITIES *****************/
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.ovrflw-y {
+    overflow-y: scroll;
 }
 
 /********************* COMMON ***************/
@@ -29,6 +42,41 @@ img {
     background-color: var(--primary-bg-color);
 }
 
+nav {
+    background-color: #ffffff;
+    height: calc(var(--head-bar-height) - 10px);
+}
+
+.logo {    
+    width: 15%;
+    height: calc(var(--head-bar-height) - 20px);
+    /* debug */
+    background-color: green;
+}
+
+.mobile-logo {
+    display: block;
+}
+
+.desktop-logo {
+    display: none;
+}
+
+.search-bar {
+    width: 70%;
+    background-color: #e5e5e5;
+    height: calc(var(--head-bar-height) - 20px);
+}
+
+.nav-btn {
+    width: 15%;
+    height: calc(var(--head-bar-height) - 20px);
+    /* debug */
+    background-color: green;
+}
+
+
+
 /********************* MAIN ******************/
 main {
     height: calc(100% - var(--head-bar-height));
@@ -38,12 +86,34 @@ main {
 .sidebar {
     width: var(--sidebar-wd);
     background-color: var(--sidebar-bg-color);
-    background-image: url(../img/sidebar-bg.png);
-    
+    background-image: url(../img/sidebar-bg.png);  
+}
+
+.sidebar-icon {
+    /* debug */
+    background-color: white;
+    height: 30%;
+}
+
+.admin-setting {
+    /* debug */
+    background-color: white;
+    height: 10%;
 }
 
 /************** dashboard section ***************/
-.dashboard-section {
+.dashboard {
     width:calc(100% - var(--sidebar-wd));
     background-color:var(--primary-bg-color);
+}
+
+/************** dashboard header ***************/
+.dashboard-header{
+    background-color:  var( --dashboard-header-bg-color);
+}
+
+.dashboard-header-box {
+    width: 100%;
+    /* debug */
+    background-color: white;
 }

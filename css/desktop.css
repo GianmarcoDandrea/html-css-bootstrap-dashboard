@@ -8,3 +8,12 @@
 .sidebar {
     width: var(--sidebar-wd);   
 }
+
+/******************* HEAD BAR ********************/
+.mobile-logo {
+    display: none;
+}
+
+.desktop-logo {
+    display: block;
+}
