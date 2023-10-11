@@ -8,8 +8,9 @@
 
 
     /************* side bar *********/
-    --sidebar-wd: 80px;
+    --sidebar-wd: 60px;
     --sidebar-bg-color: #142A40;
+    --sidebar-text-color: #ffffff;
 
     /******** dashboard header ********/
     --dashboard-header-bg-color:#1b72e8;
@@ -95,19 +96,16 @@ main {
 .sidebar {
     width: var(--sidebar-wd);
     background-color: var(--sidebar-bg-color);
-    background-image: url(../img/sidebar-bg.png);  
+    background-image: url(../img/sidebar-bg.png);
 }
 
-.sidebar-icon {
-    /* debug */
-    background-color: white;
-    height: 30%;
-}
-
+.sidebar a,
 .admin-setting {
-    /* debug */
-    background-color: white;
-    height: 10%;
+    color: var(--sidebar-text-color);
+}
+
+.icon-text {
+    display: none;
 }
 
 

@@ -9,6 +9,10 @@
     width: var(--sidebar-wd);   
 }
 
+.icon-text {
+    display: block;
+}
+
 /******************* HEAD BAR ********************/
 .mobile-logo {
     display: none;
