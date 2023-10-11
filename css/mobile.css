@@ -1,0 +1,49 @@
+/******************** ROOT *********************/
+:root {
+    /************** common *********/
+    --primary-bg-color:#F8F9FA;
+
+    /************** head bar *********/
+    --head-bar-height: 60px;
+
+
+    /************* side bar *********/
+    --sidebar-wd: 80px;
+    --sidebar-bg-color: #142A40;
+
+}
+
+/********************* COMMON ***************/
+
+body {
+    font-family:'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/******************* HEAD BAR ********************/
+.head-bar {
+    height: var(--head-bar-height);
+    background-color: var(--primary-bg-color);
+}
+
+/********************* MAIN ******************/
+main {
+    height: calc(100% - var(--head-bar-height));
+
+}
+/***************** side bar ***************/
+.sidebar {
+    width: var(--sidebar-wd);
+    background-color: var(--sidebar-bg-color);
+    background-image: url(../img/sidebar-bg.png);
+    
+}
+
+/************** dashboard section ***************/
+.dashboard-section {
+    width:calc(100% - var(--sidebar-wd));
+    background-color:var(--primary-bg-color);
+}
