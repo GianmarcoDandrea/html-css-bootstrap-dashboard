@@ -222,7 +222,7 @@ main {
 }
 
 .failed-status::before {
-    content: "pocess";
+    content: "failed";
     background-color: red;
     color: var(--primary-text-color);
     padding: 0.1rem 0.3rem;
