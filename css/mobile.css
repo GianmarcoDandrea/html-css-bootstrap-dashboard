@@ -267,14 +267,12 @@ details[open] .angle-down {
     transform: rotate(180deg);
 }
 
-
-
 .faq-section summary {
     list-style: none;
 }
 
+/************* to do list *************/
 .todo {
-    /* debug */
     background-color: var(--dashboard-box-bg-color);
 }
 
@@ -282,8 +280,8 @@ details[open] .angle-down {
     padding-left: 0;
 }
 
-.graphic {
-    /* debug */
-    height: 450px;
+
+/*************** stats section *************/
+.stats {
     background-color: var(--dashboard-box-bg-color);
 }
