@@ -62,9 +62,29 @@
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </a>
 
-                    <a class="text-decoration-none" href="">
-                        <i class="fa-solid fa-bell"></i>
-                    </a>
+                    <details class="pos-rel">
+                        <summary>
+                            <i class="fa-solid fa-bell"></i>
+                        </summary>
+
+                        <div class="menu-open pos-abs flex-display flex-column flex-center">
+                            <div class="profile-mn p-2">
+                                <a class="text-decoration-none" href="">
+                                    Profilo
+                                </a>
+                            </div>
+                            <div class="billing-mn p-2">
+                                <a class="text-decoration-none" href="">
+                                    Fatturazione
+                                </a>
+                            </div>
+                            <div class="logout-mn p-2">
+                                <a class="text-decoration-none" href="">
+                                    Logout
+                                </a>
+                            </div>
+                        </div>
+                    </details>
                 </div>
             </div>
 
@@ -116,10 +136,26 @@
 
                 <!-- dashboard header -->
                 <div class="dashboard-header d-flex flex-wrap justify-content-evenly px-1">
-                    <div class="new-student my-2 dashboard-header-box d-flex">
+                    <div class="new-student my-2 dashboard-header-box d-flex align-items-start">
+
                         <span>
                             Nuovo Studente
                         </span>
+
+                        <!-- offcanvas form -->
+                        <button class="btn btn-primary border ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+    
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                ...
+                            </div>
+                        </div>
 
                     </div>
 
@@ -204,7 +240,7 @@
 
                                         <tbody>
 
-                                            <tr class="d-flex flex-nowrap">
+                                            <tr class="d-flex flex-nowrap border-bottom">
                                                 <td class="table-data-name width-table-name d-flex py-0 align-items-center border border-0">
 
                                                     <div class="tdata-icon rounded-circle d-flex flex-center">
@@ -240,7 +276,7 @@
                                                 </td>
                                             </tr>
 
-                                            <tr class="d-flex flex-nowrap">
+                                            <tr class="d-flex flex-nowrap border-bottom">
                                                 <td class="table-data-name width-table-name d-flex py-0 align-items-center border border-0">
 
                                                     <div class="tdata-icon rounded-circle d-flex flex-center">
@@ -276,7 +312,7 @@
                                                 </td>
                                             </tr>
 
-                                            <tr class="d-flex flex-nowrap">
+                                            <tr class="d-flex flex-nowrap border-bottom">
                                                 <td class="table-data-name width-table-name d-flex py-0 align-items-center border border-0">
 
                                                     <div class="tdata-icon rounded-circle d-flex flex-center">
@@ -312,7 +348,7 @@
                                                 </td>
                                             </tr>
 
-                                            <tr class="d-flex flex-nowrap">
+                                            <tr class="d-flex flex-nowrap border-bottom">
                                                 <td class="table-data-name width-table-name d-flex py-0 align-items-center border border-0">
 
                                                     <div class="tdata-icon rounded-circle d-flex flex-center">
@@ -348,7 +384,7 @@
                                                 </td>
                                             </tr>
 
-                                            <tr class="d-flex flex-nowrap">
+                                            <tr class="d-flex flex-nowrap border-bottom">
                                                 <td class="table-data-name width-table-name d-flex py-0 align-items-center border border-0">
 
                                                     <div class="tdata-icon rounded-circle d-flex flex-center">
@@ -384,7 +420,7 @@
                                                 </td>
                                             </tr>
 
-                                            <tr class="d-flex flex-nowrap">
+                                            <tr class="d-flex flex-nowrap border-bottom">
                                                 <td class="table-data-name width-table-name d-flex py-0 align-items-center border border-0">
 
                                                     <div class="tdata-icon rounded-circle d-flex flex-center">
@@ -420,7 +456,7 @@
                                                 </td>
                                             </tr>
 
-                                            <tr class="d-flex flex-nowrap">
+                                            <tr class="d-flex flex-nowrap border-bottom">
                                                 <td class="table-data-name width-table-name d-flex py-0 align-items-center border border-0">
 
                                                     <div class="tdata-icon rounded-circle d-flex flex-center">
@@ -456,7 +492,7 @@
                                                 </td>
                                             </tr>
 
-                                            <tr class="d-flex flex-nowrap">
+                                            <tr class="d-flex flex-nowrap border-bottom">
                                                 <td class="table-data-name width-table-name d-flex py-0 align-items-center border border-0">
 
                                                     <div class="tdata-icon rounded-circle d-flex flex-center">
@@ -618,5 +654,8 @@
 
         </main>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>

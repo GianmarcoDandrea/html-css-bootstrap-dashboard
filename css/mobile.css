@@ -39,13 +39,14 @@
     overflow-y: scroll;
 }
 
-.width-table-name {
-    width: var(--table-name-wd);
+.pos-rel {
+    position: relative;
 }
 
-.width-table-col {
-    width: var(--table-col-wd);
+.pos-abs {
+    position: absolute;
 }
+
 
 
 /********************* COMMON ***************/
@@ -58,6 +59,13 @@ img {
     max-width: 100%;
 }
 
+.width-table-name {
+    width: var(--table-name-wd);
+}
+
+.width-table-col {
+    width: var(--table-col-wd);
+}
 
 /******************* HEAD BAR ********************/
 .head-bar {
@@ -111,6 +119,16 @@ img {
 
 .search-bar-btn .fa-bell {
     color: var(--bell-color);
+}
+
+.search-bar-btn summary {
+    list-style: none;
+}
+
+.menu-open {
+    transform: translateX(-100%);
+    background-color: var(--primary-bg-color);
+    width: 150px;
 }
 
 .search-bar-btn .fa-list-ul,
@@ -246,7 +264,7 @@ main {
     display: none;
 }
 
-tr:hover {
+tbody tr:hover {
     background-color: var(--primary-bg-color);
 }
 
@@ -257,7 +275,7 @@ tr:hover {
     background-color: var(--dashboard-box-bg-color);
 }
 
-details[open] > summary {
+.faq-section details[open] > summary {
     background-color: #bfe7ffb0;
     outline: 5px solid #9ad8ffa8;
     color: var(--dashboard-header-bg-color);
