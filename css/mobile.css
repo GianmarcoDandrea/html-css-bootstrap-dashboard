@@ -313,3 +313,8 @@ details[open] .angle-down {
 .offcanvas {
     z-index: 9999;
 }
+
+.offcanvas.offcanvas-end{
+    width: 675px;
+    max-width: 100%;
+}
