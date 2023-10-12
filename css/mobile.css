@@ -275,8 +275,11 @@ details[open] .angle-down {
 
 .todo {
     /* debug */
-    height: 300px;
     background-color: var(--dashboard-box-bg-color);
+}
+
+.form-check {
+    padding-left: 0;
 }
 
 .graphic {
