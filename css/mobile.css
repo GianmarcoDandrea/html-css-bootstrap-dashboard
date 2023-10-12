@@ -3,6 +3,7 @@
     /************** common *********/
     --primary-bg-color:#F8F9FA;
     --primary-text-color: #ffffff;
+    --icon-color: #5b5858;
 
     /************** head bar *********/
     --head-bar-height: 60px;
@@ -20,6 +21,7 @@
     /************* dashboard main ***************/
     --title-bg-color: #f7f7f7;
     --dashboard-box-bg-color: #ffffff;
+    --thead-icon-bg-color :#f26551;
 
 
 
@@ -178,12 +180,49 @@ main {
 }
 
 
-
+/******** next classes ******/
 .next-classes {
-    /* debug */
-    height: 450px;
     background-color: var(--dashboard-box-bg-color);
 }
+
+.tdata-icon {
+    width: 26px;
+    aspect-ratio: 1/1;
+    background-color: var(--thead-icon-bg-color);
+    color: var(--primary-text-color);
+}
+
+.change-btn,
+.delete-btn {
+    color: var(--icon-color);
+}
+
+.done-status::before {
+    content: "sone";
+    background-color: green;
+    color: var(--primary-text-color);
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
+}
+
+.process-status::before {
+    content: "process";
+    background-color: yellow;
+    color: var(--primary-text-color);
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
+}
+
+.failed-status::before {
+    content: "pocess";
+    background-color: red;
+    color: var(--primary-text-color);
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
+}
+
+
+
 
 .faq {
     /* debug */

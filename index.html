@@ -27,6 +27,7 @@
 <body>
     <div class="wrapper w-100 vh-100">
 
+        <!-- HEAD BAR -->
         <div class="head-bar w-100 d-flex flex-center">
             <div class="head-bar-nav d-flex w-100 p-2 flex-center justify-content-between">
 
@@ -49,16 +50,29 @@
                 </div>
 
                 <div class="search-bar-btn d-flex flex-center justify-content-around">
-                    <i class="fa-solid fa-list-ul"></i>
-                    <i class="fa-solid fa-circle-question"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                    <i class="fa-solid fa-bell"></i>
+                    <a class="text-decoration-none" href="">
+                        <i class="fa-solid fa-list-ul"></i>
+                    </a>
+
+                    <a class="text-decoration-none" href="">
+                        <i class="fa-solid fa-circle-question"></i>
+                    </a>
+
+                    <a class="text-decoration-none" href="">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </a>
+
+                    <a class="text-decoration-none" href="">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
                 </div>
             </div>
 
 
         </div>
 
+
+        <!-- MAIN -->
         <main class="w-100 d-flex flex-wrap">
 
             <!-------------- SIDEBAR ------------>
@@ -165,49 +179,66 @@
                         <div class="row w-100 d-flex flex-wrap">
 
                             <div class="left-col col-12 col-md-8 py-2">
+
+                                <!-- next classes -->
                                 <div class="next-classes rounded-2 border">
 
                                     <h4 class="title p-3 m-0 border-bottom">
                                         Prossime classi
                                     </h4>
 
-                                    <table class="table">
+                                    <!-- TABLE -->
+                                    <table class="table p-3">
+
                                         <thead>
-                                          <tr>
-                                            <th scope="col">Nome</th>
-                                            <th scope="col">Data inizio</th>
-                                            <th scope="col">ROI</th>
-                                            <th scope="col">Stato</th>
-                                            <th scope="col">Azioni</th>
-                                          </tr>
+                                            <tr class=" align-items-center">
+                                                <th scope="col" class="table-class-name">Nome</th>
+                                                <th scope="col" class="table-class-date text-center">Data inizio</th>
+                                                <th scope="col" class="table-class-roi text-center">ROI</th>
+                                                <th scope="col" class="table-class-state text-center">Stato</th>
+                                                <th scope="col" class="table-class-action text-center">Azioni</th>
+                                            </tr>
                                         </thead>
+
                                         <tbody>
-                                          <tr class="border-bottom">
-                                            <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                            <td>@mdo</td>
-                                          </tr>
-                                          <tr class="border-bottom">
-                                            <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                            <td>@mdo</td>
-                                          </tr>
-                                          <tr class="border-bottom">
-                                            <th scope="row">3</th>
-                                            <td colspan="2">Larry the Bird</td>
-                                            <td>@twitter</td>
-                                            <td>@mdo</td>
-                                          </tr>
-                                          <tr class="border-bottom">
-                                            <th scope="row">3</th>
-                                            <td colspan="2">Larry the Bird</td>
-                                            <td>@twitter</td>
-                                            <td>@mdo</td>
-                                          </tr>
+
+                                            <tr>
+                                                <td class="d-flex py-0 align-items-center border border-0">
+
+                                                <div class="tdata-icon rounded-circle d-flex flex-center">
+                                                    <i class="fa-solid fa-code"></i>
+                                                </div>
+
+                                                <div class="name-class px-2">
+                                                    Classe 75
+                                                </div>
+                                                
+                                                </td>
+
+                                                <td class="table-data-date text-center border border-0 ">
+                                                    15 Febbraio 2021
+                                                </td>
+
+                                                <td class="text-center border border-0">
+                                                    20%
+                                                </td>
+                                                <td class="done-status text-center border border-0">
+
+                                                </td>
+
+                                                <td class="d-flex justify-content-center border border-0 g-2"> 
+
+                                                    <div class="change-btn btn border mx-2">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </div>
+
+                                                    <div class="delete-btn btn border">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+
                                         </tbody>
                                       </table>
                                 </div>
