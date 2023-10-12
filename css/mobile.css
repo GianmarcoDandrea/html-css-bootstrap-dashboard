@@ -254,9 +254,23 @@ tr:hover {
 /************** faq ***************/
 
 .faq {
-    /* debug */
-    height: 300px;
     background-color: var(--dashboard-box-bg-color);
+}
+
+details[open] > summary {
+    background-color: #bfe7ffb0;
+    outline: 5px solid #9ad8ffa8;
+    color: var(--dashboard-header-bg-color);
+}
+
+details[open] .angle-down {
+    transform: rotate(180deg);
+}
+
+
+
+.faq-section summary {
+    list-style: none;
 }
 
 .todo {
