@@ -69,17 +69,17 @@
 
                         <div class="menu-open pos-abs flex-display flex-column flex-center">
                             <div class="profile-mn p-2">
-                                <a class="text-decoration-none" href="">
+                                <a class="text-decoration-none text-reset" href="">
                                     Profilo
                                 </a>
                             </div>
                             <div class="billing-mn p-2">
-                                <a class="text-decoration-none" href="">
+                                <a class="text-decoration-none text-reset" href="">
                                     Fatturazione
                                 </a>
                             </div>
                             <div class="logout-mn p-2">
-                                <a class="text-decoration-none" href="">
+                                <a class="text-decoration-none text-reset" href="">
                                     Logout
                                 </a>
                             </div>
@@ -142,21 +142,10 @@
                             Nuovo Studente
                         </span>
 
-                        <!-- offcanvas form -->
-                        <button class="btn btn-primary border ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <!-- offcanvas button -->
+                        <button class="offcanvas-btn btn border ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <i class="fa-solid fa-plus"></i>
                         </button>
-    
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                ...
-                            </div>
-                        </div>
-
                     </div>
 
                     <div class="type-of-plan my-2 dashboard-header-box d-flex flex-wrap align-items-baseline">
@@ -655,6 +644,17 @@
         </main>
     </div>
 
+    <!-- OFF CANVAS -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+        </div>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>

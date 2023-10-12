@@ -185,6 +185,11 @@ main {
     color: var(--primary-text-color);
 }
 
+.offcanvas-btn {
+    color: var(--primary-text-color);
+    background-color: var(--dashboard-header-bg-color);
+}
+
 .dashboard-header-box {
     width: 100%;
 }
@@ -302,4 +307,9 @@ details[open] .angle-down {
 /*************** stats section *************/
 .stats {
     background-color: var(--dashboard-box-bg-color);
+}
+
+/*************** OFFCANVAS *************/
+.offcanvas {
+    z-index: 9999;
 }
