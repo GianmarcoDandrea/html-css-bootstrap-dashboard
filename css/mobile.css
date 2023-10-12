@@ -13,6 +13,7 @@
     /************* side bar *********/
     --sidebar-wd: 60px;
     --sidebar-bg-color: #142A40;
+    --sidebar-hover-bg-color:#cecece;
 
     /******** dashboard header ********/
     --dashboard-header-bg-color:#1b72e8;
@@ -143,6 +144,11 @@ main {
     display: none;
 }
 
+.sidebar-opt:hover,
+.admin-setting:hover {
+    background-color: var(--sidebar-hover-bg-color);
+}
+
 
 /************** DASHBOARD ***************/
 .dashboard {
@@ -240,8 +246,12 @@ main {
     display: none;
 }
 
+tr:hover {
+    background-color: var(--primary-bg-color);
+}
 
 
+/************** faq ***************/
 
 .faq {
     /* debug */
