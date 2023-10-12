@@ -1,3 +1,11 @@
+root {
+    /************* dashboard main ***************/
+    --table-name-wd:45%;
+    --table-col-wd:calc((100% - var(--table-name-wd)) / 4);
+
+
+
+}
 /************** dashboard header ***************/
 .dashboard-header-box {
     width: 32%;
@@ -5,4 +13,22 @@
 
 .new-student {
     order: 2;
+}
+
+.width-table-name {
+    width: var(--table-name-wd);
+}
+
+.width-table-col {
+    width: var(--table-col-wd);
+}
+
+.table-data-date,
+.table-class-date {
+    display: inline-block;
+}
+
+.table-class-roi,
+.table-data-roi {
+    display: block;
 }

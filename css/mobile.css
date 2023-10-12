@@ -22,8 +22,8 @@
     --title-bg-color: #f7f7f7;
     --dashboard-box-bg-color: #ffffff;
     --thead-icon-bg-color :#f26551;
-
-
+    --table-name-wd:50%;
+    --table-col-wd:calc((100% - var(--table-name-wd)) / 2);
 
 }
 
@@ -36,6 +36,14 @@
 
 .ovrflw-y {
     overflow-y: scroll;
+}
+
+.width-table-name {
+    width: var(--table-name-wd);
+}
+
+.width-table-col {
+    width: var(--table-col-wd);
 }
 
 
@@ -198,7 +206,7 @@ main {
 }
 
 .done-status::before {
-    content: "sone";
+    content: "done";
     background-color: green;
     color: var(--primary-text-color);
     padding: 0.1rem 0.3rem;
@@ -207,7 +215,7 @@ main {
 
 .process-status::before {
     content: "process";
-    background-color: yellow;
+    background-color: #ffc107;
     color: var(--primary-text-color);
     padding: 0.1rem 0.3rem;
     border-radius: 5px;
@@ -219,6 +227,17 @@ main {
     color: var(--primary-text-color);
     padding: 0.1rem 0.3rem;
     border-radius: 5px;
+}
+
+
+.table-data-date,
+.table-class-date {
+    display: none;
+}
+
+.table-class-roi,
+.table-data-roi {
+    display: none;
 }
 
 
